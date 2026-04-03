@@ -14,6 +14,7 @@ Introductory Arduino project demostrating a traffic light for cars using basic d
 -delay() function for timing
 -pinMode() for configuring pins
 -Conditional statements (if)
+-digitalRead() for reading pins
 
 ##Circuit
 ![Traffic_Light_For_Cars](https://github.com/user-attachments/assets/8c34058b-4e54-4750-8797-2b954c173a24)
