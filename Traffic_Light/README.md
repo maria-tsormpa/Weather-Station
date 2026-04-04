@@ -17,7 +17,7 @@ Introductory Arduino project demostrating a traffic light for cars using basic d
 -digitalRead() for reading pins
 
 ## Circuit Schematic View
-[Traffic_Light_For_Cars_Schematics.pdf](https://github.com/user-attachments/files/26480821/Traffic_Light_For_Cars_Schematics.pdf)
+
 
 ## Real Setup
 
