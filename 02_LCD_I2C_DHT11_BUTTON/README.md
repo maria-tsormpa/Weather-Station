@@ -62,7 +62,7 @@ The Arduino sketch is available in the file `LCD_I2C_DHT11_Button.ino`.
 - Two-page LCD menu.
 - Push button navigation.
 
-## What Changed from the Previous Step
+## Improvments from Step 1
 
 - Replaced the parallel LCD with an I2C LCD.
 - Added a DHT11 sensor.
