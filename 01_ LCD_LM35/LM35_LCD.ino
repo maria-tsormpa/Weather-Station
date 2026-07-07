@@ -20,7 +20,7 @@ void loop() {
 
   float value = analogRead(LM35_Pin);
 
-  temperature = (value*0.85*100.0/1024.0); // βαθμινόμηση (0.85 αντι για 1.1)
+  temperature = (value*0.85*100.0/1024.0); // βαθμονόμηση (0.85 αντι για 1.1)
   
   // εμφάνιση στην οθόνη
   lcd.clear();
