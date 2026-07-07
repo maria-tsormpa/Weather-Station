@@ -2,7 +2,11 @@
 
 ## Objective
 
-The objective of this step was to display the ambient temperature measured by an LM35 temperature sensor on a 16×2 LCD display using an Arduino Uno.
+The objective of this step was to display the ambient temperature measured by an LM35 temperature sensor on a 16×2 LCD display using an Arduino Uno. 
+
+## Measurement Method
+
+The LM35 is an analog temperature sensor, therefore the Arduino ADC was configured to use the internal 1.1 V reference (analogReference(INTERNAL)) to improve the measurement resolution. A 100 nF ceramic capacitor was also added to reduce electrical noise on the sensor supply.
 
 ## Components
 
@@ -55,5 +59,6 @@ The Arduino sketch is available in the file `LM35_LCD.ino`.
 
 - Reads ambient temperature using the LM35 analog temperature sensor.
 - Displays temperature on a 16×2 parallel LCD.
-- Uses the Arduino internal 1.1 V reference for improved measurement accuracy.
+- Uses the Arduino internal 1.1 V analog reference (analogReference(INTERNAL)).
+- Reduces measurement noise using a 100 nF ceramic capacitor.
 - Updates the temperature reading every second.
