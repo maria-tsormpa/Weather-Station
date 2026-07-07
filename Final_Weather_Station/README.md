@@ -133,6 +133,7 @@ The Arduino sketch is available in the file **Final_Weather_Station.ino**.
 
 
 ## Schematic
+<img width="2931" height="2073" alt="Schematic_Final_Weather_Station" src="https://github.com/user-attachments/assets/d849edea-721f-4b38-8ae9-9383a2a906ee" />
 
 ## Future Improvements
 
