@@ -18,8 +18,8 @@ The objective of this step was to display the ambient temperature measured by an
 
 | Arduino Uno | Component |
 |--------------|-----------|
-| 5V | LCD VCC |
-| GND | LCD GND |
+| 5V | LCD VCC, LM35 VCC|
+| GND | LCD GND, LM35 GND |
 | D2 | LCD RS |
 | D3 | LCD EN |
 | D4 | LCD D4 |
@@ -27,8 +27,6 @@ The objective of this step was to display the ambient temperature measured by an
 | D6 | LCD D6 |
 | D7 | LCD D7 |
 | A0 | LM35 OUT |
-| 5V | LM35 VCC |
-| GND | LM35 GND |
 | 1.1V Internal Reference | Used for improved LM35 measurement accuracy |
 
 
