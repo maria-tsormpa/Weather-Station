@@ -15,7 +15,7 @@ The objective of this step was to upgrade the weather station by replacing the p
 - 10 kΩ resistor
 - Push Button
 - Breadboard
-- 14 Jumper Wires male to male
+- 14 Male-To-Male Jumper Wires 
 
 
 ## Pin Connections
