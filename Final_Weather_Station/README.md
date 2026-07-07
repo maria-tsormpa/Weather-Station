@@ -28,15 +28,17 @@ The project integrates analog and digital sensors, I2C communication, sensor cal
 - Arduino Uno
 - 20×4 LCD Display (I2C Interface)
 - LM35 Temperature Sensor
+- 100nF ceramic capasitor (for LM35)
 - DHT11 Temperature & Humidity Sensor
 - BMP280 Pressure Sensor
 - LDR (Light Dependent Resistor)
+- 10 kΩ (for LDR)
 - MQ135 Air Quality Sensor
 - Push Button
 - Breadboard
+- Mini breadboard
 - 23 Male-to-Male Jumper Wires
 
----
 
 ## Pin Connections
 
@@ -69,8 +71,6 @@ The project integrates analog and digital sensors, I2C communication, sensor cal
 - LM35 Temperature
 - DHT11 Temperature
 
----
-
 ### Page 2
 
 - Humidity
@@ -78,8 +78,6 @@ The project integrates analog and digital sensors, I2C communication, sensor cal
   - Day
   - Cloudy
   - Night
-
----
 
 ### Page 3
 
@@ -89,7 +87,6 @@ The project integrates analog and digital sensors, I2C communication, sensor cal
   - Normal
   - High
 
----
 
 ### Page 4
 
@@ -98,8 +95,6 @@ The project integrates analog and digital sensors, I2C communication, sensor cal
   - Good
   - Moderate
   - Poor
-
----
 
 ## Sensor Calibration
 
@@ -121,7 +116,6 @@ The sea-level pressure was automatically calibrated using the local altitude.
 
 The sensor is automatically calibrated during startup by averaging 100 readings to establish a clean-air baseline.
 
----
 
 ## Images
 
