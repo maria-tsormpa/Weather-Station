@@ -10,7 +10,8 @@ The objective of this step was to upgrade the weather station by replacing the p
 - 20×4 LCD Display (I2C Interface)
 - DHT11 Temperature & Humidity Sensor
 - LM35 Temperature Sensor
-- 10 kΩ resistor
+- 100 nF Ceramic Capacitor (for LM35)
+- 10 kΩ resistor (for Push Button)
 - Push Button
 - Breadboard
 - 14 Male-To-Male Jumper Wires 
