@@ -9,10 +9,11 @@ The objective of this step was to expand the weather station by adding atmospher
 - Arduino Uno
 - 20×4 LCD Display (I2C Interface)
 - LM35 Temperature Sensor
+- 100 nF Ceramic Capacitor (for LM35)
 - DHT11 Temperature & Humidity Sensor
 - BMP280 Pressure Sensor
 - LDR (Light Dependent Resistor)
-- 10 kΩ Resistor
+- 10 kΩ Resistor (for LDR)
 - Push Button
 - Breadboard
 - 19 Male-to-Male Jumper Wires
