@@ -28,7 +28,7 @@ The project integrates analog and digital sensors, I2C communication, sensor cal
 - Arduino Uno
 - 20×4 LCD Display (I2C Interface)
 - LM35 Temperature Sensor
-- 100nF ceramic capasitor (for LM35)
+- 100nF Ceramic Capasitor (for LM35)
 - DHT11 Temperature & Humidity Sensor
 - BMP280 Pressure Sensor
 - LDR (Light Dependent Resistor)
