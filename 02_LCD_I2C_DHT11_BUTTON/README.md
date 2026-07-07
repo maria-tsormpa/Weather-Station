@@ -4,6 +4,11 @@
 
 The objective of this step was to upgrade the weather station by replacing the parallel LCD with a 20×4 I2C LCD display, reducing the required wiring. A DHT11 sensor was added to measure temperature and humidity, while the existing LM35 analog temperature sensor was retained in order to compare the readings of an analog and a digital temperature sensor. A push button was also implemented to switch between multiple information pages displayed on the LCD.
 
+## Design Improvements
+
+The parallel LCD was replaced by an I2C LCD, significantly reducing the required wiring.
+The DHT11 sensor was introduced not only to measure humidity but also to compare its temperature readings with the analog LM35 sensor.
+
 ## Components
 
 - Arduino Uno
@@ -58,6 +63,7 @@ The Arduino sketch is available in the file `LCD_I2C_DHT11_Button.ino`.
 - Parallel LCD replaced with an I2C LCD.
 - Displays LM35 temperature.
 - Displays DHT11 temperature.
+- Compares analog (LM35) and digital (DHT11) temperature sensors.
 - Displays DHT11 humidity.
 - Two-page LCD menu.
 - Push button navigation.
