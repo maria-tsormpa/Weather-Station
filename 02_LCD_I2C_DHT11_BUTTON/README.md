@@ -2,9 +2,7 @@
 
 ## Objective
 
-The objective of this step was to upgrade the weather station by replacing the parallel LCD with a 20×4 I2C LCD display, reducing the required wiring. A DHT11 sensor was added to measure temperature and humidity, while a push button was used to switch between different information pages displayed on the LCD.
-
-
+The objective of this step was to upgrade the weather station by replacing the parallel LCD with a 20×4 I2C LCD display, reducing the required wiring. A DHT11 sensor was added to measure temperature and humidity, while the existing LM35 analog temperature sensor was retained in order to compare the readings of an analog and a digital temperature sensor. A push button was also implemented to switch between multiple information pages displayed on the LCD.
 
 ## Components
 
@@ -63,3 +61,9 @@ The Arduino sketch is available in the file `LCD_I2C_DHT11_Button.ino`.
 - Two-page LCD menu.
 - Push button navigation.
 
+## What Changed from the Previous Step
+
+- Replaced the parallel LCD with an I2C LCD.
+- Added a DHT11 sensor.
+- Added push button navigation.
+- Introduced multiple LCD pages.
