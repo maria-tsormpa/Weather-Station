@@ -51,3 +51,9 @@ The Arduino sketch is available in the file `LM35_LCD.ino`.
 
 ## Schematic
 
+## Features
+
+- Reads ambient temperature using the LM35 analog temperature sensor.
+- Displays temperature on a 16×2 parallel LCD.
+- Uses the Arduino internal 1.1 V reference for improved measurement accuracy.
+- Updates the temperature reading every second.
