@@ -4,7 +4,7 @@
 
 The objective of this step was to upgrade the weather station by replacing the parallel LCD with a 20×4 I2C LCD display, reducing the required wiring. A DHT11 sensor was added to measure temperature and humidity, while a push button was used to switch between different information pages displayed on the LCD.
 
----
+
 
 ## Components
 
@@ -12,11 +12,11 @@ The objective of this step was to upgrade the weather station by replacing the p
 - 20×4 LCD Display (I2C Interface)
 - DHT11 Temperature & Humidity Sensor
 - LM35 Temperature Sensor
+- 10 kΩ resistor
 - Push Button
 - Breadboard
-- Male-to-Male Jumper Wires
+- 14 Jumper Wires male to male
 
----
 
 ## Pin Connections
 
@@ -30,7 +30,7 @@ The objective of this step was to upgrade the weather station by replacing the p
 | 5V | LCD, DHT11, LM35 |
 | GND | LCD, DHT11, LM35 |
 
----
+
 
 ## Required Libraries
 
@@ -39,7 +39,6 @@ The objective of this step was to upgrade the weather station by replacing the p
 #include <DHT.h>
 ```
 
----
 
 ## Images
 
@@ -48,5 +47,9 @@ The objective of this step was to upgrade the weather station by replacing the p
 
 ### LCD Output
 
-
 ## Arduino Code
+
+The Arduino sketch is available in the file `LM35_LCD.ino`.
+
+
+## Schematic
