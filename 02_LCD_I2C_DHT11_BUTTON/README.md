@@ -49,7 +49,17 @@ The objective of this step was to upgrade the weather station by replacing the p
 
 ## Arduino Code
 
-The Arduino sketch is available in the file `LM35_LCD.ino`.
+The Arduino sketch is available in the file `LCD_I2C_DHT11_Button.ino`.
 
 
 ## Schematic
+
+## Features
+
+- Parallel LCD replaced with an I2C LCD.
+- Displays LM35 temperature.
+- Displays DHT11 temperature.
+- Displays DHT11 humidity.
+- Two-page LCD menu.
+- Push button navigation.
+
