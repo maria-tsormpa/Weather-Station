@@ -31,7 +31,7 @@ The objective of this step was to expand the weather station by adding atmospher
 | SDA | LCD I2C, BMP280 |
 | SCL | LCD I2C, BMP280 |
 | 5V | LCD, LM35, DHT11, LDR |
-| 3.3V | BMP280 *(or 5V if using a module with voltage regulator)* |
+| 3.3V | BMP280 |
 | GND | LCD, LM35, DHT11, BMP280, LDR |
 
 
