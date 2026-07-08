@@ -22,7 +22,8 @@ The BMP280 and LCD share the same I2C bus, allowing multiple devices to communic
 - 10 kΩ Resistor (for LDR)
 - Push Button
 - Breadboard
-- 21 Male-to-Male Jumper Wires
+- 17 Male-to-Male Jumper Wires
+- 4 Male-to-Female Jumper Wires
 
 
 ## Pin Connections
