@@ -47,9 +47,14 @@ The DHT11 sensor was introduced not only to measure humidity but also to compare
 ## Images
 
 ### Circuit
-
+<img width="1920" height="1280" alt="Circuit" src="https://github.com/user-attachments/assets/4a1737af-671a-4d6a-873c-5e84b7b4fc4c" />
 
 ### LCD Output
+Page 1
+<img width="1920" height="1280" alt="Page 1" src="https://github.com/user-attachments/assets/60481045-e04b-4d56-9842-606de03d585e" />
+
+# Page 2
+<img width="1920" height="1280" alt="Page 2" src="https://github.com/user-attachments/assets/678d926c-be3c-4ad3-9e90-98ef0277cff1" />
 
 ## Arduino Code
 
