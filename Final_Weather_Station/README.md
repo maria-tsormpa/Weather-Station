@@ -6,6 +6,12 @@ This project is a complete Arduino-based weather station developed step by step 
 
 The project integrates analog and digital sensors, I2C communication, sensor calibration techniques and menu navigation using a push button.
 
+## Development Process
+
+The weather station was developed incrementally through four major stages.
+
+Each stage introduced new hardware while preserving the functionality of the previous version, resulting in a progressively more capable environmental monitoring system.
+
 
 ## Features
 
@@ -21,6 +27,12 @@ The project integrates analog and digital sensors, I2C communication, sensor cal
 - Push button navigation.
 - Sensor calibration.
 - I2C communication.
+- Uses INPUT_PULLUP for reliable push button operation.
+- Dedicated CheckButton() function for menu navigation.
+- Automatic MQ135 startup calibration.
+- Sea-level pressure calibration for the BMP280.
+- Temperature sensor recalibration using linear regression.
+- Optimized LCD refresh to avoid unnecessary screen clearing.
 
 
 ## Components
@@ -37,7 +49,8 @@ The project integrates analog and digital sensors, I2C communication, sensor cal
 - Push Button
 - Breadboard
 - Mini breadboard
-- 23 Male-to-Male Jumper Wires
+- 20 Male-To-Male Jumper Wires
+- 4 Male-To-Female Jumper Wires
 
 
 ## Pin Connections
@@ -99,23 +112,23 @@ The project integrates analog and digital sensors, I2C communication, sensor cal
 ## Sensor Calibration
 
 Several calibration techniques were implemented to improve measurement accuracy.
+For LM35 and DHT11: Calibration data were collected experimentally and processed using Python. Linear regression was applied to obtain correction equations, which were then implemented directly in the Arduino firmware.
 
 ### LM35
 
-A linear correction was applied after comparing the analog sensor with the DHT11.
+A linear correction was applied after comparing the analog sensor with a trustworthy thermometre.
 
 ### DHT11
 
-A correction equation was applied to reduce measurement error.
+A correction equation was applied to reduce measurement error, using a trustworthy thermometre.
 
 ### BMP280
 
-The sea-level pressure was automatically calibrated using the local altitude.
+The sea-level reference pressure is automatically calculated using the local installation altitude to improve altitude estimation.
 
 ### MQ135
 
-The sensor is automatically calibrated during startup by averaging 100 readings to establish a clean-air baseline.
-
+The sensor performs an automatic startup calibration by averaging 100 analog readings to establish a clean-air baseline before normal operation.
 
 ## Images
 
@@ -123,6 +136,14 @@ The sensor is automatically calibrated during startup by averaging 100 readings 
 
 
 ### LCD Output
+
+# Page 1
+
+# Page 2
+
+# Page 3
+
+# Page 4
 
 
 
