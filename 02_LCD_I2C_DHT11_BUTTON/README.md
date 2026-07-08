@@ -19,7 +19,8 @@ The DHT11 sensor was introduced not only to measure humidity but also to compare
 - 10 kΩ resistor (for Push Button)
 - Push Button
 - Breadboard
-- 16 Male-To-Male Jumper Wires 
+- 12 Male-To-Male Jumper Wires
+- 4 Male-To-Female Jumper Wires
 
 
 ## Pin Connections
