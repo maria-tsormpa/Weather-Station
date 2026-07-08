@@ -4,6 +4,12 @@
 
 The objective of this step was to expand the weather station by adding atmospheric pressure, altitude estimation and ambient light detection. The BMP280 sensor was integrated to measure atmospheric pressure and estimate altitude, while an LDR sensor was added to determine the ambient lighting conditions (Day, Cloudy or Night). The push button menu was extended from two to four information pages.
 
+## Design Improvements
+
+The LCD menu was expanded from two to four pages.
+
+The BMP280 and LCD share the same I2C bus, allowing multiple devices to communicate over the SDA and SCL lines.
+
 ## Components
 
 - Arduino Uno
@@ -16,9 +22,8 @@ The objective of this step was to expand the weather station by adding atmospher
 - 10 kΩ Resistor (for LDR)
 - Push Button
 - Breadboard
-- 19 Male-to-Male Jumper Wires
+- 21 Male-to-Male Jumper Wires
 
----
 
 ## Pin Connections
 
@@ -47,14 +52,30 @@ The objective of this step was to expand the weather station by adding atmospher
 ## Images
 
 ### Circuit
-
+<img width="1920" height="1280" alt="Circuit" src="https://github.com/user-attachments/assets/5737fb90-b06f-433e-83a7-192d768cf6ce" />
 
 ### LCD Output
+# Page 1
+<img width="1920" height="1280" alt="Page 1" src="https://github.com/user-attachments/assets/722d6828-d69f-4a75-911f-b9979cfb95f5" />
+
+# Page 2
+<img width="1920" height="1280" alt="Page 2" src="https://github.com/user-attachments/assets/c2a52e87-678f-4a9a-8013-1b6de13f262c" />
+
+# Page 3
+<img width="1920" height="1280" alt="Page 3" src="https://github.com/user-attachments/assets/1d96b358-42d5-461b-bdbb-23f75bbf7ee4" />
+
+# Page 4
+<img width="1920" height="1280" alt="Page 4" src="https://github.com/user-attachments/assets/dec5b398-7fe6-48d6-a164-0ba0877f7ce5" />
 
 ## Arduino Code
 
 The Arduino sketch is available in the file **BMP280_LDR.ino**.
 
+## Push Button Improvement
+
+The initial implementation used an external pull-down resistor.
+
+For improved stability and simpler wiring, the push button was redesigned using the Arduino internal INPUT_PULLUP resistor.
 
 ## Schematic
 
@@ -71,6 +92,7 @@ The Arduino sketch is available in the file **BMP280_LDR.ino**.
 - Classifies atmospheric pressure as **Low**, **Normal**, or **High**.
 - Four-page LCD menu.
 - Push button navigation.
+- Uses the Arduino INPUT_PULLUP configuration for reliable button detection.
 - I2C communication for the LCD and BMP280.
 
 
@@ -84,4 +106,5 @@ The Arduino sketch is available in the file **BMP280_LDR.ino**.
 - Added pressure classification (Low, Normal, High).
 - Added light classification (Day, Cloudy, Night).
 - Expanded the LCD menu from two to four pages.
+- Improved button stability and reduced false triggering.
 
