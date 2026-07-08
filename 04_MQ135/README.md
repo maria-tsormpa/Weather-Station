@@ -18,7 +18,8 @@ The objective of this step was to extend the weather station by adding an MQ135 
 - Push Button
 - Breadboard
 - Mini breadboard
-- 23 Male-to-Male Jumper Wires
+- 20 Male-to-Male Jumper Wires
+- 4 Male-to-Female Jumper Wires
 
 
 ## Pin Connections
@@ -50,9 +51,20 @@ The objective of this step was to extend the weather station by adding an MQ135 
 ## Images
 
 ### Circuit
-
+<img width="1920" height="1280" alt="Circuit" src="https://github.com/user-attachments/assets/ba8727c3-601f-441d-ae2f-65bd329b2e52" />
 
 ### LCD Output
+# Page 1
+<img width="1920" height="1280" alt="Page 1" src="https://github.com/user-attachments/assets/40c746f9-cbcb-47c2-8d13-f7fd2068b6d3" />
+
+# Page 2
+<img width="1920" height="1280" alt="Page 2" src="https://github.com/user-attachments/assets/ed0e3bf9-b93d-40e8-be9d-c25f09c88533" />
+
+# Page 3
+<img width="1920" height="1280" alt="Page 3" src="https://github.com/user-attachments/assets/abbc308a-7be4-49d1-bc5e-38407cd4b562" />
+
+# Page 4
+<img width="1920" height="1280" alt="Page 4" src="https://github.com/user-attachments/assets/ce7f2f7e-6824-417e-b5b2-0a543bfbad6c" />
 
 
 
