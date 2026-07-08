@@ -24,8 +24,8 @@ This change was required because all analog inputs share the same ADC reference 
 - Push Button
 - Breadboard
 - Mini breadboard
-- 20 Male-to-Male Jumper Wires
-- 4 Male-to-Female Jumper Wires
+- 20 Male-To-Male Jumper Wires
+- 4 Male-To-Female Jumper Wires
 
 
 ## Pin Connections
