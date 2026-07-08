@@ -4,6 +4,12 @@
 
 The objective of this step was to extend the weather station by adding an MQ135 gas sensor for basic air quality monitoring. The sensor was used to classify the surrounding air quality as **Good**, **Moderate**, or **Bad**, while keeping all the previous weather measurements and the four-page LCD menu.
 
+## Analog Reference
+
+The Arduino analog reference was changed from INTERNAL (1.1 V) to DEFAULT (5 V).
+
+This change was required because all analog inputs share the same ADC reference voltage, allowing the LM35, LDR and MQ135 sensors to operate correctly together.
+
 ## Components
 
 - Arduino Uno
@@ -72,6 +78,11 @@ The objective of this step was to extend the weather station by adding an MQ135 
 
 The Arduino sketch is available in the file **MQ135.ino**.
 
+## MQ135 Calibration
+
+The MQ135 sensor was stabilized by averaging multiple analog readings before classifying the air quality.
+
+This approach reduced measurement noise and provided more consistent results.
 
 ## Schematic
 
@@ -91,6 +102,8 @@ The Arduino sketch is available in the file **MQ135.ino**.
 - Four-page LCD menu.
 - Push button navigation.
 - I2C communication for the LCD and BMP280.
+- Uses the Arduino DEFAULT analog reference.
+- Reduces MQ135 measurement noise using averaged analog readings.
 
 
 ## Improvements from Step 3
